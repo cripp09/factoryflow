@@ -38,16 +38,15 @@ class Product(models.Model):
     fats = models.DecimalField(max_digits=10,
                                 decimal_places=1,
                                 verbose_name='Жиры')
-    shelf_life = models.IntegerField(max_length=2,
-                                     verbose_name='Срок годности в мес.')
+    shelf_life = models.IntegerField(verbose_name='Срок годности в мес.')
     gost = models.CharField(max_length=100,
                             verbose_name='ГОСТ/ТУ')
-    halal = models.BooleanField(default=True,
+    halal = models.BooleanField(default=False,
                                 verbose_name='Халяль')
     ean_13 = models.BooleanField(default=False)
-    barcode_e13 = models.CharField(max_length=13,
+    barcode_e13 = models.CharField(blank=True,
+                                   max_length=13,
                                    verbose_name='ШК от заказчика')
-    
     image = models.ImageField(upload_to='products/%Y/%m/%d',
                                 blank=True,
                                 verbose_name='Изображение')
