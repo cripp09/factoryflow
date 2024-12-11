@@ -26,3 +26,4 @@ production/static/production/js/script.js
 production/templates/base.html
 production/templates/production/index.html
 polutushi/templates/polutushi/detail.html
+.gitignore
