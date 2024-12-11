@@ -22,3 +22,6 @@ class Polutushi(models.Model):
     
     def get_absolute_url(self):
             return reverse('polutushi_detail', kwargs={'id': self.id})
+    
+    def get_objects_by_datetime(self, date):
+        pass

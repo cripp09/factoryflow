@@ -18,12 +18,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from production import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('polutushi/', include('polutushi.urls', namespace='polutushi')),
     path('api/', include('polutushi.api.urls', namespace='api')),
     path('production/', include('production.urls', namespace='production')),
+    path('', views.index, name='index'),
 ]
 
 if settings.DEBUG:

@@ -16,3 +16,13 @@ env/
 .idea/
 .vscode/
 *.log
+kak
+polutushi/templates/base.html
+polutushi/templates/polutushi/index.html
+production/static/polutushi/css/styles.css
+production/static/polutushi/js/script.js
+production/static/production/css/styles.css
+production/static/production/js/script.js
+production/templates/base.html
+production/templates/production/index.html
+polutushi/templates/polutushi/detail.html
